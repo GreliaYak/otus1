@@ -46,17 +46,47 @@ public class Practic {
 
         int[] b3;
         b3 = new int[5];
-        b3[1] = 1;
-        b3[0] = 323;
-        b3[4] = 123;
-        b3[2] = 153;
-        b3[3] = 124;
+        b3[0] = 1;
+        b3[1] = 323;
+        b3[2] = 123;
+        b3[3] = 153;
+        b3[4] = 124;
 
         int y = b3.length;
 
-        for (int i = 0; i == y; i++) {
+        for (int i = 0; i < y; i++) {
             System.out.println(b3[i]);
-
         }
+        // for each - по факту как for, но делается только со ВСЕМ массивом без особых условий
+
+        int[] b4;
+        b4 = new int[5];
+        b4[0] = 1;
+        b4[1] = 12342;
+        b4[2] = 51233;
+        b4[3] = 141233;
+        b4[4] = 1212414;
+
+        for (int w : b4) {
+            System.out.println(w);
+        }
+        for (int u = 0; u < 2; u++) {
+            b4[u] = b4[u] + 1;
+            System.out.println(b4[u]);
+        }
+        // for while
+
+        int cash = 200;
+        while (cash > 0) {
+            System.out.println("Гуляем на всю катушку");
+            cash = cash - 20;
+        }
+        // do while
+        int cash1 = 0;
+        do {
+            System.out.println("На мели");
+            cash1 = cash - 20;
+        }
+        while (cash1 > 0);
     }
 }
